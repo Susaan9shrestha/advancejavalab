@@ -8,14 +8,14 @@ public class UserInfoApp extends JFrame {
     public UserInfoApp() {
       
         setTitle("User Information");
-        setSize(500, 200); // Adjusted size to fit components better
+        setSize(500, 200); 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 10, 10); // Padding
 
         
-        ImageIcon icon = new ImageIcon(getClass().getResource("/icon.png")); // Adjust path if in a subfolder
+        ImageIcon icon = new ImageIcon(getClass().getResource("/icon.png")); 
 
         
         if (icon.getImageLoadStatus() != java.awt.MediaTracker.COMPLETE) {
