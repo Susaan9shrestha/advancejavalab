@@ -12,7 +12,7 @@ public class UserInfoApp extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(10, 10, 10, 10); // Padding
+        gbc.insets = new Insets(10, 10, 10, 10); 
 
         
         ImageIcon icon = new ImageIcon(getClass().getResource("/icon.png")); 
