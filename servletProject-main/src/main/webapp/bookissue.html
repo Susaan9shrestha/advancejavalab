@@ -1,0 +1,66 @@
+<style>
+        body-bookissue {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container-book {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+</style>
+<div class="container">
+        <form>
+            <label for="student-name">Student Name</label>
+            <input type="text" id="student-name" name="student-name" required>
+            
+            <label for="student-id">Student ID</label>
+            <input type="text" id="student-id" name="student-id" required>
+            
+            <label for="book-title">Book Title</label>
+            <input type="text" id="book-title" name="book-title" required>
+            
+            <label for="issue-date">Issue Date</label>
+            <input type="date" id="issue-date" name="issue-date" required>
+            
+            <button type="submit">Issue Book</button>
+        </form>
+    </div>
+

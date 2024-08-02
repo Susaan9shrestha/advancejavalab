@@ -1,0 +1,68 @@
+<style>
+        body-bookissue {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container-book {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+</style>
+
+    <div class="container-book">
+        <h2>Add a New Book</h2>
+        <form action="BookServlet" method="post">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+            
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required><br><br>
+            
+            <label for="isbn">ISBN:</label>
+            <input type="text" id="isbn" name="isbn" required><br><br>
+            
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step="0.01" required><br><br>
+            
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+
